@@ -1,0 +1,267 @@
+/* HERO SECTION */
+.contact-hero {
+  position: relative;
+}
+
+/* CONTACT SECTION */
+.contact-section {
+  background: #f7f9fc;
+  padding: 80px 20px;
+}
+.image {
+  display: flex;
+  align-items: center; /* vertically center */
+  justify-content: center; /* horizontally center */
+  position: relative;
+}
+
+.image h1 {
+  color: #fff;
+  font-size: 48px;
+  font-weight: 700;
+}
+.image p {
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+/* .contact-container {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  gap: 40px;
+} */
+
+.contact-container {
+  display: flex;
+  gap: 60px;
+  padding: 60px 80px;
+  align-items: flex-start;
+}
+
+/* LEFT SIDE */
+.contact-left {
+  flex: 1;
+}
+
+.contact-left h1 {
+  font-size: 36px;
+  margin-bottom: 15px;
+  color: #222;
+}
+
+.contact-left p {
+  font-size: 16px;
+  color: #555;
+  line-height: 1.6;
+}
+
+.divider {
+  width: 60px;
+  height: 4px;
+  background: #ff9800;
+  margin: 25px 0;
+  border-radius: 10px;
+}
+
+.info-item {
+  display: flex;
+  gap: 15px;
+  padding: 16px 18px;
+  margin-bottom: 16px;
+  background-color: #a3622a; /* normal light grey */
+  border-radius: 8px;
+}
+
+.info-item {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 22px;
+}
+
+.icon-circle {
+  width: 44px;
+  height: 44px;
+  background: #ff9800;
+  color: #fff;
+  font-size: 20px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.info-item h4 {
+  margin: 0;
+  font-size: 16px;
+  color: #222;
+}
+
+.info-item span {
+  font-size: 14px;
+  color: #f1eeee;
+}
+
+/* RIGHT SIDE */
+.contact-right {
+  flex: 1;
+}
+
+.form-card {
+  background: #aca9a9ee;
+  padding: 40px;
+  border-radius: 14px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.form-card h2 {
+  font-size: 26px;
+  margin-bottom: 10px;
+}
+
+.form-card p {
+  font-size: 15px;
+  color: #666;
+  margin-bottom: 25px;
+}
+
+.form-card {
+  padding: 20px; 
+  border-radius: 10px;
+  background: #fff;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08); 
+  max-width: 500px; /* width control */
+}
+
+.form-card {
+  padding: 10px 12px; /* left section सारखी padding */
+  border-radius: 6px; /* same as left */
+  background: #cfcece; /* left section सारखा background */
+  box-shadow: none; /* optional, left सारखा clean look */
+  max-width: 100%; /* width flexible */
+}
+
+/* FORM */
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+form label {
+  font-size: 18px;
+  margin-bottom: 6px;
+}
+
+form input,
+form textarea {
+  padding: 12px;
+  margin-bottom: 18px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  font-size: 13px;
+}
+
+form textarea {
+  resize: none;
+  height: 100 px;
+}
+
+form input:focus,
+form textarea:focus {
+  outline: none;
+  border-color: #ff9800;
+}
+
+form button {
+  background: #986a25;
+  color: #fff;
+  padding: 14px;
+  border: none;
+  border-radius: 8px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+form button:hover {
+  background: #e68900;
+}
+
+/* ANIMATION */
+
+/* Left section fade-left */
+
+.fade-left {
+  opacity: 0;
+  transform: translateX(-50px);
+  animation: fadeInLeft 1s forwards;
+}
+
+/* Right section fade-right */
+.fade-right {
+  opacity: 0;
+  transform: translateX(50px);
+  animation: fadeInRight 1s forwards;
+}
+
+/* Keyframes */
+@keyframes fadeInLeft {
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeInRight {
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+
+.map-section {
+  margin-top: 60px;
+  padding: 0 80px 60px;
+}
+
+.map-section h2 {
+  text-align: center;
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.map-container {
+  width: 100%;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+
+
+@media (max-width: 768px) {
+  .map-section {
+    padding: 0 20px 40px;
+  }
+
+  .map-section h2 {
+    font-size: 22px;
+  }
+
+  .map-container iframe {
+    height: 250px;
+  }
+}
+
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .contact-container {
+    flex-direction: column;
+  }
+}
