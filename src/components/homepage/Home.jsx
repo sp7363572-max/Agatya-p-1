@@ -28,7 +28,7 @@ function Home() {
               </p>
 
               <h1 className="hero-title" style={
-                {color:"rgb(94, 51, 13)"}
+                {color:"rgb(255, 255, 255)"}
               }>
                 A Healthy <br />
                 and Testy
@@ -36,7 +36,7 @@ function Home() {
               </h1>
 
               <p className="hero-desc display-6 fw-semibold" style={
-                {color:"rgb(255, 255, 255)"}
+                {color:"rgb(86, 60, 12)",fontSize:"15px",fontWeight:""}
               }>
                 Agatya Foods is a trusted premium-quality solutions.
               </p>

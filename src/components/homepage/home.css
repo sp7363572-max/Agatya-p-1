@@ -14,16 +14,7 @@ html,body{
 
 
 /* Mobile */
-@media (max-width: 768px) {
-  .home-banner {
-    text-align: center;
-    padding-top: 40px;
-  }
 
-  .home-banner h1 {
-    font-size: 2rem;
-  }
-}
 
 /* Banner Section */
 .home-banner {
@@ -35,12 +26,23 @@ html,body{
   
 
 }
+@media (max-width: 768px) {
+  .home-banner {
+    text-align: center;
+    /* padding-top: 40px; */
+    min-height: 52vh;
+  }
+
+  .home-banner h1 {
+    font-size: 2rem;
+  }
+}
 
 .overlay{
   background: linear-gradient(
       to left,
       rgba(0, 0, 0, 0.308),
-      rgba(236, 231, 231, 0.768)
+      rgba(255, 255, 255, 0.295)
     ),
     url('../../assets/backgroundimage/bg.png'); /* optional background */
   background-size: cover;
@@ -95,15 +97,8 @@ html,body{
 }
 
 /* Mobile Responsive */
-@media (max-width: 768px) {
-  .home-banner {
-    text-align: center;
-    padding: 40px 0;
-  }
-
-  .home-banner h1 {
-    font-size: 2rem;
-  }
+ @media (max-width: 768px) {
+/* */
 
   .banner-img {
     max-height: 300px;
@@ -123,6 +118,11 @@ font-weight: bolder;
 .buttonc{
   background-color: #62360f;
   color: white;
+}
+.buttonc:hover{
+  background-color: #ffffff; 
+  color: #62360f;
+
 }
 /* .products-ui {
   padding: 80px 0;
@@ -602,7 +602,7 @@ font-weight: bolder;
 
 /* button polish */
 .buttonc {
-  font-size: 14px;
+  font-size: 16px;
   padding: 12px 28px;
   border-radius: 8px;
 }
@@ -660,8 +660,9 @@ font-weight: bolder;
 }
 
 .about-btn:hover {
-  background-color: #62360fc9;
+  background-color: #fffdfb;
   transform: translateY(-2px);
+  color: #62360f;
 }
 
 /* Responsive */
@@ -762,8 +763,12 @@ body {
 
 .home-banner {
   position: relative;
-  overflow: hidden;
+  /* min-height: 100vh; */
+  /* padding-top: 70px; navbar height only */
+  transition: margin-top 0.3s ease;
 }
+
+
 
 .overlay {
   left: 0;
